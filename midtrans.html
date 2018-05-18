@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div>
+            <h2>Get User's Transaction</h2>
+            <form method="GET" action="/test/API/getTransaction.php">
+                User ID:<br>
+                <input type="text" id="user_id"name="user_id"><br>
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+
+        <div>
+            <h2>Add new transaction</h2>
+            <form method="POST" action="/test/API/addTransaction.php">
+                User ID:<br>
+                <input type="number" id="user_id"name="user_id"><br>
+                Transaction Type ID:<br>
+                <input type="number" id="transaction_type_id"name="transaction_type_id"><br>
+                Value :<br>
+                <input type="number" id="value"name="value"><br>
+                Description :<br>
+                <input type="text" id="description"name="description"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div>
+            <h2>Add User</h2>
+            <form method="POST" action="/test/API/addUser.php">
+                Name:<br>
+                <input type="text" name="name"><br>
+                Balance:<br>
+                <input type="number" name="balance"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div>
+            <h2>Update User's name</h2>
+            <form method="POST" action="/test/API/updateUserName.php"> 
+                User ID:<br>
+                <input type="number" name="user_id"><br>
+                Name:<br>
+                <input type="text" name="name"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        
+    </script>
+
+</html>
